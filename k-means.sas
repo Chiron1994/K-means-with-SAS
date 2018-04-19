@@ -28,11 +28,11 @@ Proc Summary Data=Sample_1_Clusters nway missing;
 
 Class Cluster;
 
-Var Consumption;
+Var TargetVar;
 
 Output Out=MeanTable
 
-(Rename = (Consumption = P_Consumption))
+(Rename = (TargetVar = P_TargetVar))
 
 Mean=;
 
